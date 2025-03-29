@@ -14,4 +14,4 @@ This is a simple animated birthday landing page created to celebrate Samuel's bi
 ## 📜 How to Use  
 1. Clone the repository:  
    ```sh
-   git clone https://github.com/your-username/repository-name.git
+   git clone https://github.com/Uthman-170-cpu/Pabs-birthday.git
