@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Samuel!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            animation: bgDrop 2s ease-in-out 2s forwards;
+        }
+        .container {
+            padding: 50px;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out 4s forwards;
+        }
+        h1 {
+            font-size: 3em;
+            color: #facc15;
+        }
+        p {
+            font-size: 1.5em;
+            color: #ddd;
+        }
+        .cake {
+            width: 150px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: showCake 2s ease-in-out;
+        }
+        .ribbons {
+            width: 150px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            animation: shootRibbons 1s ease-out 6s forwards;
+        }
+        @keyframes showCake {
+            from { opacity: 0; transform: translate(-50%, -60%); }
+            to { opacity: 1; transform: translate(-50%, -50%); }
+        }
+        @keyframes bgDrop {
+            from { background-color: #000; }
+            to { background-color: #1e3a8a; }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes shootRibbons {
+            0% { opacity: 1; transform: translate(-50%, -50%) scale(0.5); }
+            50% { opacity: 1; transform: translate(-50%, -150%) scale(1.2); }
+            100% { opacity: 0; transform: translate(-50%, -200%) scale(1.5); }
+        }
+    </style>
+</head>
+<body>
+    <img src="images-removebg-preview.png" alt="Cake" class="cake">
+    <img src="remover.png" alt="Ribbons" class="ribbons">
+    <div class="container">
+        <h1>Happy Birthday, Samuel! 🎉</h1>
+        <p>Wishing you an awesome day filled with fun and adventure! 🎂🎈</p>
+    </div>
+</body>
+</html>
